@@ -1,0 +1,16 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *",
+      "runOnStartup": false,
+      "useMonitor": true
+    }
+  ],
+  "scriptFile": "index.js",
+  "entryPoint": "module.exports",
+  "disabled": false,
+  "description": "Timer trigger function for CRM data synchronization between Dynamics 365, NAV 2017, and Cosmos DB"
+}
