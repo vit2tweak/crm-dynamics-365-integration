@@ -1,0 +1,124 @@
+{
+  "short_name": "CRM D365",
+  "name": "CRM Dynamics 365 Integration",
+  "description": "Comprehensive CRM system integrating Microsoft Dynamics 365 Sales with NAV 2017 ERP, Cosmos DB product warehouse, and customer portal",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0078d4",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "productivity",
+    "crm"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "CRM Dashboard Overview"
+    },
+    {
+      "src": "screenshot-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile CRM Interface"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "View CRM dashboard with key metrics",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "icons/dashboard-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Customers",
+      "short_name": "Customers",
+      "description": "Manage customer relationships",
+      "url": "/customers",
+      "icons": [
+        {
+          "src": "icons/customers-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Sales",
+      "short_name": "Sales",
+      "description": "Track sales opportunities",
+      "url": "/sales",
+      "icons": [
+        {
+          "src": "icons/sales-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Sync Status",
+      "short_name": "Sync",
+      "description": "Monitor data synchronization",
+      "url": "/integration/sync",
+      "icons": [
+        {
+          "src": "icons/sync-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://dynamics.microsoft.com/",
+      "id": "dynamics365"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "protocol_handlers": [
+    {
+      "protocol": "web+crm",
+      "url": "/customer/%s"
+    }
+  ]
+}
